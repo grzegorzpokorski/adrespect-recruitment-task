@@ -9,6 +9,12 @@ export default {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
         headings: ["Montserrat", ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        grey: "rgb(var(--grey))",
+        black: "rgb(var(--black))",
+        green: "rgb(var(--green))",
+        beige: "rgb(var(--beige))",
+      },
     },
   },
   plugins: [],
