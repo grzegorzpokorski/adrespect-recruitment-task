@@ -165,7 +165,7 @@
                 class="inline-flex self-start text-green border-b border-green pb-1 flex items-center gap-2.5 font-sans text-base/4 mt-16 group hover:text-green/80 motion-safe:transition-colors"
                 >Dowiedz się więcej
                 <img
-                  src="./src/images/arrow-right.svg"
+                  src="./src/images/arrow-right-green.svg"
                   alt=""
                   width="16"
                   height="16"
@@ -202,7 +202,7 @@
                 class="inline-flex self-start text-green border-b border-green pb-1 flex items-center gap-2.5 font-sans text-base/4 mt-16 group hover:text-green/80 motion-safe:transition-colors"
                 >Dowiedz się więcej
                 <img
-                  src="./src/images/arrow-right.svg"
+                  src="./src/images/arrow-right-green.svg"
                   alt=""
                   width="16"
                   height="16"
@@ -239,7 +239,7 @@
                 class="inline-flex self-start text-green border-b border-green pb-1 flex items-center gap-2.5 font-sans text-base/4 mt-16 group hover:text-green/80 motion-safe:transition-colors"
                 >Dowiedz się więcej
                 <img
-                  src="./src/images/arrow-right.svg"
+                  src="./src/images/arrow-right-green.svg"
                   alt=""
                   width="16"
                   height="16"
@@ -254,6 +254,55 @@
             </div>
           </li>
         </ul>
+      </div>
+    </section>
+    <section class="bg-green text-grey" aria-labelledby="about-section-title">
+      <div
+        class="w-full max-w-screen-lg mx-auto px-3 grid grid-cols-1 md:grid-cols-2 items-center"
+      >
+        <div class="relative h-full min-h-[50vh]">
+          <picture
+            class="bg-red-500 absolute top-0 bottom-0 right-1/2 md:right-0 translate-x-1/2 md:translate-x-0 w-screen md:w-[50vw] overflow-hidden"
+          >
+            <img
+              src="./src/images/z-pasja.png"
+              alt="ścieżka w ogrodzie znajdującym się z tyłu domu"
+              class="object-cover object-center inset-0 w-full h-full"
+            />
+          </picture>
+        </div>
+        <div
+          class="py-16 px-3 lg:py-33.75 lg:pl-40 flex flex-col gap-8 lg:gap-0"
+        >
+          <header>
+            <h2 class="text-sm -tracking-percent" id="about-section-title">
+              O firmie
+            </h2>
+            <p class="font-headings text-5xl mt-4">
+              Tworzymy z
+              <span class="italic font-medium font-sans">pasją</span>
+            </p>
+          </header>
+          <p class="lg:mt-10 -tracking-percent">
+            Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą
+            wykwalifikowani projektanci oraz architekci, których zadaniem jest
+            rozpoznanie i realizacja potrzeb każdego Klienta. Nasza
+            specjalizacja to przestrzenie nowoczesne, które charakteryzuje
+            minimalizm, geometria i elegancka prostota. Tworzymy ogrody
+            małoobsługowe, dostosowane do współczesnego trybu życia.
+          </p>
+          <div class="lg:mt-18 flex">
+            <a
+              href="#"
+              class="flex flex-row items-center gap-2 bg-transparent border border-grey text-grey py-3 px-6 rounded-full motion-safe:transition-colors motion-safe:transition-all group hover:bg-white hover:text-green"
+              >Poznaj nas bliżej
+              <span
+                class="w-4 h-4 bg-[url('/src/images/arrow-right-white.svg')] group-hover:bg-[url('/src/images/arrow-right-green.svg')] motion-safe:group-hover:ml-4 transition-all"
+                aria-hidden="true"
+              ></span>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
     <section
@@ -336,10 +385,10 @@
               </li>
             </ul>
           </nav>
-          <div class="flex gap-4 md:gap-12">
+          <address class="flex gap-4 md:gap-12">
             <a href="tel:000000000">000-000-000</a>
             <a href="mailto:giarddesign@kontakt.pl">giarddesign@kontakt.pl</a>
-          </div>
+          </address>
         </div>
         <div
           class="flex flex-col md:flex-row gap-4 md:gap-0 justify-between items-center mt-16 md:mt-30 -tracking-percent"

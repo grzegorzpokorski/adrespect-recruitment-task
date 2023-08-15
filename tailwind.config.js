@@ -29,6 +29,7 @@ export default {
         18: "72px",
         27.5: "110px",
         30: "120px",
+        33.75: "135px",
       },
       letterSpacing: {
         percent: "1%",
