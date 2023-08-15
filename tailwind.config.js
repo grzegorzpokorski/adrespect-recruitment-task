@@ -23,11 +23,17 @@ export default {
         beige: "rgb(var(--beige))",
       },
       spacing: {
+        15: "60px",
         15.5: "62px",
+        27.5: "110px",
         30: "120px",
       },
       letterSpacing: {
         percent: "1%",
+        "2percent": "2%",
+      },
+      fontSize: {
+        banner: "40px",
       },
     },
   },
