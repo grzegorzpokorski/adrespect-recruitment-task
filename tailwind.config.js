@@ -5,6 +5,13 @@ export default {
   content: ["./src/**/*.js}", "./index.html"],
   theme: {
     extend: {
+      screens: {
+        lg: "1262px",
+      },
+      maxWidth: {
+        footer: "1064px",
+        lg: "1262px",
+      },
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
         headings: ["Montserrat", ...defaultTheme.fontFamily.sans],
@@ -14,6 +21,13 @@ export default {
         black: "rgb(var(--black))",
         green: "rgb(var(--green))",
         beige: "rgb(var(--beige))",
+      },
+      spacing: {
+        15.5: "62px",
+        30: "120px",
+      },
+      letterSpacing: {
+        percent: "1%",
       },
     },
   },
