@@ -13,6 +13,7 @@ const handleCloseMobiileMenuOnEscape = ({ key }) => {
 
 const closeMobileNavigation = () => {
   navigationTrigger.setAttribute("aria-expanded", "false");
+  navigationTrigger.setAttribute("aria-label", "Otwórz menu nawigacyjne");
   navigation.setAttribute("data-isopen", "false");
   navigation.classList.add("translate-x-full");
   document.body.classList.remove("overflow-hidden", "lg:overflow-y-auto");
@@ -21,6 +22,7 @@ const closeMobileNavigation = () => {
 
 const openMobileNavigation = () => {
   navigationTrigger.setAttribute("aria-expanded", "true");
+  navigationTrigger.setAttribute("aria-label", "Zamknij menu nawigacyjne");
   navigation.setAttribute("data-isopen", "true");
   navigation.classList.remove("translate-x-full");
   document.body.classList.add("overflow-hidden", "lg:overflow-y-auto");
