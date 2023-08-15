@@ -12,6 +12,110 @@
     />
   </head>
   <body>
+    <header class="bg-white text-black">
+      <div
+        class="max-w-screen-lg mx-auto px-3 flex justify-between items-center h-18 [&_a:hover]:text-black/80"
+      >
+        <a href="#" class="hover:opacity-80 transition-[opacity]">
+          <h1 class="sr-only">giarddesign</h1>
+          <img
+            src="./src/images/logo-dark.svg"
+            alt="giarddesign"
+            width="115"
+            height="20"
+            aria-hidden="true"
+          />
+        </a>
+        <button
+          id="navigationTrigger"
+          class="flex h-8 w-8 flex-col items-center justify-center gap-1.5 lg:hidden [&[aria-expanded=true]_div:nth-child(1)]:translate-y-2 [&[aria-expanded=true]_div:nth-child(3)]:-translate-y-2 [&[aria-expanded=true]_div:nth-child(1)]:rotate-45 [&[aria-expanded=true]_div:nth-child(3)]:-rotate-45 [&[aria-expanded=true]_div:nth-child(2)]:opacity-0"
+          type="button"
+          aria-label="Otwórz menu nawigacyjne"
+          aria-controls="navigation"
+          aria-expanded="false"
+        >
+          <div
+            class="ease h-0.5 w-8 bg-black transition duration-300 motion-reduce:transition-none"
+          ></div>
+          <div
+            class="ease h-0.5 w-8 bg-black transition duration-300 motion-reduce:transition-none opacity-100 scale-100"
+          ></div>
+          <div
+            class="ease h-0.5 w-8 bg-black transition duration-300 motion-reduce:transition-none"
+          ></div>
+        </button>
+        <div
+          class="fixed lg:relative inset-0 top-18 lg:top-auto lg:top-auto lg:relative bg-white p-3 lg:p-0 z-10 translate-x-full lg:translate-x-0 transition duration-300 flex flex-col lg:flex-row lg:items-center gap-8 max-lg:overflow-y-auto"
+          id="navigation"
+        >
+          <nav class="mr-auto w-full lg:w-auto order-2 lg:order-1">
+            <ul
+              role="list"
+              class="list-none flex flex-col lg:flex-row gap-8 lg:gap-12 text-sm -tracking-percent"
+            >
+              <li class="flex flex-col gap-8 relative group/dropdown">
+                <a href="#" class="flex items-center gap-1.25"
+                  >Oferta
+                  <img
+                    src="./src/images/hevron-down.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </a>
+                <ul
+                  class="list-none flex flex-col gap-4 pl-4 border-l border-green lg:absolute lg:top-full lg:bg-white lg:border-0 lg:p-4 lg:w-48 lg:shadow-md lg:hidden lg:group-hover/dropdown:flex"
+                  role="list"
+                >
+                  <li>
+                    <a href="#">Projekty</a>
+                  </li>
+                  <li>
+                    <a href="#">Wizualizacje</a>
+                  </li>
+                  <li>
+                    <a href="#">Realizacje</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">O firmie</a>
+              </li>
+              <li>
+                <a href="#">Realizacje</a>
+              </li>
+              <li>
+                <a href="#">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+          <form
+            action=""
+            class="flex flex-row items-center lg:justify-end gap-1 group/form order-1 lg:order-2"
+          >
+            <label for="search-input" class="sr-only">Szukaj</label>
+            <input
+              id="search-input"
+              type="text"
+              placeholder="Szukaj"
+              class="h-11 pr-24 w-full lg:w-0 rounded-md border border-green lg:border-0 bg-green/10 px-4 lg:px-0 py-2 lg:py-0 text-green placeholder:text-green/70 lg:group-hover/form:px-4 lg:focus:px-4 lg:group-hover/form:py-2 lg:focus:pxy-2 lg:group-hover/form:border lg:focus:border lg:group-hover/form:border-green lg:focus:border-green lg:group-hover/form:w-full lg:focus:w-full transition-all duration-500"
+            />
+            <button
+              type="submit"
+              class="w-11 h-11 flex flex-col items-center justify-center bg-green/20 lg:bg-transparent border border-green lg:border-transparent lg:hover:bg-green/20 lg:hover:border-green rounded-md aspect-square transition-all duration-500"
+            >
+              <span class="sr-only">szukaj</span>
+              <img
+                src="./src/images/search.svg"
+                alt="szukaj"
+                width="24"
+                height="24"
+                aria-hidden="true"
+              />
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
     <section class="bg-grey" aria-labelledby="oferta-section-title">
       <div class="max-w-footer px-3 mx-auto">
         <header class="md:w-3/4 lg:w-9/12 px-3 pt-30 pb-24">
@@ -39,7 +143,7 @@
           role="list"
         >
           <li
-            class="bg-white px-10 py-12 rounded-7 flex-1 flex flex-col items-start text-black relative border-2 border-grey hover:border-green motion-safe:transition-colors group"
+            class="bg-white px-10 py-12 rounded-7 flex-1 flex flex-col items-start text-black relative border-2 border-grey hover:border-green/80 motion-safe:transition-colors group"
           >
             <img
               src="./src/images/pencil.svg"
@@ -69,14 +173,14 @@
                   class="group-hover:ml-2 motion-safe:transition-all"
                 />
                 <div
-                  class="absolute inset-0 z-20 rounded-7"
+                  class="absolute inset-0 rounded-7"
                   aria-hidden="true"
                 ></div>
               </a>
             </div>
           </li>
           <li
-            class="bg-white px-10 py-12 rounded-7 flex-1 flex flex-col items-start text-black relative border-2 border-grey hover:border-green motion-safe:transition-colors group"
+            class="bg-white px-10 py-12 rounded-7 flex-1 flex flex-col items-start text-black relative border-2 border-grey hover:border-green/80 motion-safe:transition-colors group"
           >
             <img
               src="./src/images/eye.svg"
@@ -90,12 +194,12 @@
                 Wizualizacje
               </h3>
               <p class="text-sm -tracking-percent mt-3">
-                Przedstawimy Ci projekty koncepcyjne  w postaci wirtualnego
+                Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego
                 spaceru animowanego w technologii 3D.
               </p>
               <a
                 href="#"
-                class="inline-flex self-start text-green border-b border-green pb-1 flex items-center gap-2.5 font-sans text-base/4"
+                class="inline-flex self-start text-green border-b border-green pb-1 flex items-center gap-2.5 font-sans text-base/4 mt-16 group hover:text-green/80 motion-safe:transition-colors"
                 >Dowiedz się więcej
                 <img
                   src="./src/images/arrow-right.svg"
@@ -103,16 +207,17 @@
                   width="16"
                   height="16"
                   aria-hidden="true"
+                  class="group-hover:ml-2 motion-safe:transition-all"
                 />
                 <div
-                  class="absolute inset-0 z-20 rounded-7"
+                  class="absolute inset-0 rounded-7"
                   aria-hidden="true"
                 ></div>
               </a>
             </div>
           </li>
           <li
-            class="bg-white px-10 py-12 rounded-7 flex-1 flex flex-col items-start text-black relative border-2 border-grey hover:border-green motion-safe:transition-colors group"
+            class="bg-white px-10 py-12 rounded-7 flex-1 flex flex-col items-start text-black relative border-2 border-grey hover:border-green/80 motion-safe:transition-colors group"
           >
             <img
               src="./src/images/sparks.svg"
@@ -131,7 +236,7 @@
               </p>
               <a
                 href="#"
-                class="inline-flex self-start text-green border-b border-green pb-1 flex items-center gap-2.5 font-sans text-base/4"
+                class="inline-flex self-start text-green border-b border-green pb-1 flex items-center gap-2.5 font-sans text-base/4 mt-16 group hover:text-green/80 motion-safe:transition-colors"
                 >Dowiedz się więcej
                 <img
                   src="./src/images/arrow-right.svg"
@@ -139,9 +244,10 @@
                   width="16"
                   height="16"
                   aria-hidden="true"
+                  class="group-hover:ml-2 motion-safe:transition-all"
                 />
                 <div
-                  class="absolute inset-0 z-20 rounded-7"
+                  class="absolute inset-0 rounded-7"
                   aria-hidden="true"
                 ></div>
               </a>

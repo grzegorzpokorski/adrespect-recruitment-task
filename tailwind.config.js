@@ -2,7 +2,7 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.js}", "./index.html"],
+  content: ["./src/**/*.js", "./index.html"],
   theme: {
     extend: {
       screens: {
@@ -23,8 +23,10 @@ export default {
         beige: "rgb(var(--beige))",
       },
       spacing: {
+        1.25: "5px",
         15: "60px",
         15.5: "62px",
+        18: "72px",
         27.5: "110px",
         30: "120px",
       },
