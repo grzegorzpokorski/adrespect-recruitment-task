@@ -31,9 +31,14 @@ export default {
       letterSpacing: {
         percent: "1%",
         "2percent": "2%",
+        "5percent": "5%",
       },
       fontSize: {
         banner: "40px",
+        7: "28px",
+      },
+      borderRadius: {
+        7: "28px",
       },
     },
   },
