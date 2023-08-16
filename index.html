@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <header class="bg-white text-black">
       <div
         class="max-w-screen-lg mx-auto px-3 flex justify-between items-center h-18 [&_a:hover]:text-black/80"
@@ -117,6 +117,71 @@
       </div>
     </header>
     <main>
+      <section class="bg-beige relative">
+        <article
+          class="w-full max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-2 items-center"
+        >
+          <div class="relative h-full min-h-[50vh] md:order-2">
+            <picture
+              class="absolute top-0 bottom-0 right-1/2 md:left-0 translate-x-1/2 md:translate-x-0 w-screen md:w-[50vw]"
+            >
+              <img
+                src="./src/images/banner.png"
+                alt="ogród"
+                class="object-cover object-center inset-0 w-full h-full"
+              />
+            </picture>
+          </div>
+          <header
+            class="px-6 md:pr-16 py-36.25 md:order-1 flex flex-col gap-4 lg:gap-11"
+          >
+            <h2 class="text-6xl/[1.16] font-medium font-headings text-black">
+              Nowoczesna aranżacja Twojego ogrodu
+            </h2>
+            <p class="text-base">
+              Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
+              realizacji. Oferujemy kompleksowy zakres usługz indywidualnym
+              podejściem do każdego projektu.
+            </p>
+            <div class="flex flex-row flex-wrap gap-x-9 gap-y-2">
+              <a
+                href="#"
+                class="flex gap-2 items-center bg-green hover:bg-green/90 border-green text-grey py-3 px-6 rounded-full motion-safe:transition-colors"
+                >Skontaktuj się z nami</a
+              >
+              <a
+                href="#"
+                class="flex gap-2 items-center bg-transparent hover:bg-green border border-green text-green hover:text-white py-3 px-6 rounded-full motion-safe:transition-colors group"
+                >Zobacz nasze realizacje
+                <span
+                  class="w-4 h-4 bg-[url('/src/images/arrow-right-green.svg')] group-hover:bg-[url('/src/images/arrow-right-white.svg')] rotate-90 transition-all"
+                  aria-hidden="true"
+                ></span
+              ></a>
+            </div>
+          </header>
+        </article>
+        <nav class="absolute bottom-0 right-0 bg-white flex gap-8 px-8 py-6">
+          <button class="w-12 h-12 group">
+            <img
+              src="./src/images/slider-arrow.svg"
+              alt=""
+              aria-hidden="true"
+              class="group-hover:-translate-x-1 motion-safe:transition-[transform]"
+            />
+            <span class="sr-only">poprzedni slajd</span>
+          </button>
+          <button class="w-12 h-12 group">
+            <img
+              src="./src/images/slider-arrow.svg"
+              alt=""
+              aria-hidden="true"
+              class="rotate-180 group-hover:translate-x-1 motion-safe:transition-[transform]"
+            />
+            <span class="sr-only">następny slajd</span>
+          </button>
+        </nav>
+      </section>
       <section class="bg-grey" aria-labelledby="oferta-section-title">
         <div class="max-w-footer px-3 mx-auto">
           <header class="md:w-3/4 lg:w-9/12 px-3 pt-30 pb-24">
