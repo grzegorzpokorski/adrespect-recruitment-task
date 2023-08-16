@@ -26,6 +26,7 @@ export default {
         1.25: "5px",
         15: "60px",
         15.5: "62px",
+        17.5: "70px",
         18: "72px",
         27.5: "110px",
         30: "120px",
@@ -34,6 +35,7 @@ export default {
       letterSpacing: {
         percent: "1%",
         "2percent": "2%",
+        "3percent": "3%",
         "5percent": "5%",
       },
       fontSize: {
