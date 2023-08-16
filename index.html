@@ -117,15 +117,20 @@
       </div>
     </header>
     <main>
-      <section class="bg-beige relative">
-        <ul class="list-none flex flex-row w-full overflow-y-auto">
-          <li class="min-w-[100vw]">
+      <section class="bg-beige relative overflow-hidden" id="slider">
+        <ul
+          data-slider-track
+          class="list-none overflow-hidden flex flex-row gap-4 motion-safe:scroll-smooth snap-x snap-mandatory"
+        >
+          <li class="min-w-[100%] snap-center" data-slide>
             <article
-              class="max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-2 items-center"
+              class="max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-2 items-center h-full"
             >
-              <div class="relative h-full min-h-[350px] md:order-2">
+              <div
+                class="relative h-[350px] md:h-full min-h-[350px] md:order-2"
+              >
                 <picture
-                  class="absolute top-0 bottom-0 right-1/2 md:left-0 translate-x-1/2 md:translate-x-0 w-screen md:w-[50vw]"
+                  class="absolute top-0 bottom-0 right-1/2 md:left-0 translate-x-1/2 md:translate-x-0 w-screen md:w-[calc(50vw)]"
                 >
                   <img
                     src="./images/banner.png"
@@ -166,13 +171,15 @@
               </header>
             </article>
           </li>
-          <li class="min-w-[100vw]">
+          <li class="min-w-[100%] snap-center" data-slide>
             <article
-              class="w-full max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-2 items-center"
+              class="w-full max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-2 items-center h-full"
             >
-              <div class="relative h-full min-h-[350px] md:order-2">
+              <div
+                class="relative h-[350px] md:h-full min-h-[350px] md:order-2"
+              >
                 <picture
-                  class="absolute top-0 bottom-0 right-1/2 md:left-0 translate-x-1/2 md:translate-x-0 w-screen md:w-[50vw]"
+                  class="absolute top-0 bottom-0 right-1/2 md:left-0 translate-x-1/2 md:translate-x-0 w-screen md:w-[calc(50vw)]"
                 >
                   <img
                     src="./images/banner2.jpg"
@@ -187,11 +194,52 @@
                 <h2
                   class="text-4xl lg:text-6xl/[1.16] font-medium font-headings text-black"
                 >
-                  Nowoczesna aranżacja Twojego ogrodu
+                  Lorem ipsum dolor sit
+                </h2>
+                <p class="text-base">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                  aperiam ullam alias ducimus quidem. Veniam laboriosam
+                  recusandae nesciunt deserunt est beatae officiis earum iusto,
+                  temporibus magni sint! Alias, deserunt quos?
+                </p>
+                <div class="flex flex-row flex-wrap gap-x-9 gap-y-2">
+                  <a
+                    href="#"
+                    class="flex gap-2 items-center bg-green hover:bg-green/90 border-green text-grey py-3 px-6 rounded-full motion-safe:transition-colors"
+                    >Skontaktuj się z nami</a
+                  >
+                </div>
+              </header>
+            </article>
+          </li>
+          <li class="min-w-[100%] snap-center" data-slide>
+            <article
+              class="max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-2 items-center h-full"
+            >
+              <div
+                class="relative h-[350px] md:h-full min-h-[350px] md:order-2"
+              >
+                <picture
+                  class="absolute top-0 bottom-0 right-1/2 md:left-0 translate-x-1/2 md:translate-x-0 w-screen md:w-[calc(50vw)]"
+                >
+                  <img
+                    src="./images/banner3.jpg"
+                    alt="ogród"
+                    class="object-cover object-center inset-0 w-full h-full"
+                  />
+                </picture>
+              </div>
+              <header
+                class="px-6 md:pr-16 py-16 lg:py-36.25 md:order-1 flex flex-col gap-4 lg:gap-11"
+              >
+                <h2
+                  class="text-4xl lg:text-6xl/[1.16] font-medium font-headings text-black"
+                >
+                  Oferujemy kompleksowy zakres usług
                 </h2>
                 <p class="text-base">
                   Marka GiardDesign to wieloletnie doświadczenie i wysoka
-                  estetyka realizacji. Oferujemy kompleksowy zakres usługz
+                  estetyka realizacji. Oferujemy kompleksowy zakres usług z
                   indywidualnym podejściem do każdego projektu.
                 </p>
                 <div class="flex flex-row flex-wrap gap-x-9 gap-y-2">
@@ -216,6 +264,7 @@
         </ul>
         <nav
           class="absolute md:bottom-0 max-md:top-[350px] max-md:-translate-y-full right-0 bg-white flex gap-8 px-8 py-6"
+          data-slider-navigation
         >
           <button class="w-12 h-12 group">
             <img
@@ -223,6 +272,7 @@
               alt=""
               aria-hidden="true"
               class="group-hover:-translate-x-1 motion-safe:transition-[transform]"
+              data-slider-prev
             />
             <span class="sr-only">poprzedni slajd</span>
           </button>
@@ -232,6 +282,7 @@
               alt=""
               aria-hidden="true"
               class="rotate-180 group-hover:translate-x-1 motion-safe:transition-[transform]"
+              data-slider-next
             />
             <span class="sr-only">następny slajd</span>
           </button>
