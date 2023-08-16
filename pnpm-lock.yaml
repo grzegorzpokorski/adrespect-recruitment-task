@@ -11,6 +11,9 @@ dependencies:
   fslightbox:
     specifier: ^3.4.1
     version: 3.4.1
+  macy:
+    specifier: ^2.5.1
+    version: 2.5.1
   masonry-layout:
     specifier: ^4.2.2
     version: 4.2.2
@@ -602,6 +605,11 @@ packages:
   /lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
     dev: true
+
+  /macy@2.5.1:
+    resolution: {integrity: sha512-+y4WYyh3rl4G8UczZP30pXxhLQRZ941QcaDmWoGefzUBXdwNW8TOhjjN1g5i/VG3SmiSsHgpjVXhlnZ84P2QMw==}
+    engines: {node: '>= 0.9'}
+    dev: false
 
   /masonry-layout@4.2.2:
     resolution: {integrity: sha512-iGtAlrpHNyxaR19CvKC3npnEcAwszXoyJiI8ARV2ePi7fmYhIud25MHK8Zx4P0LCC4d3TNO9+rFa1KoK1OEOaA==}
