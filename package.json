@@ -21,9 +21,7 @@
     "vite": "^4.4.5"
   },
   "dependencies": {
-    "bricks.js": "^1.8.0",
     "fslightbox": "^3.4.1",
-    "macy": "^2.5.1",
-    "masonry-layout": "^4.2.2"
+    "macy": "^2.5.1"
   }
 }
