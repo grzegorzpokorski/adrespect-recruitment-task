@@ -559,6 +559,21 @@
           class="relative max-h-[1000px] overflow-hidden transition-all duration-[2000ms] px-3 md:px-0"
           id="bricks-container"
         >
+          <div
+            id="bricks-container-overlay"
+            class="absolute bottom-0 w-full h-[80%] flex flex-col items-center justify-end pb-22.5 bg-gradient-to-t from-beige transition-[opacity] duration-[2000ms] opacity-100 z-10"
+          >
+            <button
+              id="bricks-container-release"
+              class="flex flex-row items-center gap-2 bg-transparent border border-black text-black py-3 px-6 rounded-full motion-safe:transition-colors motion-safe:transition-all group hover:bg-white hover:text-black"
+            >
+              Rozwiń
+              <span
+                class="w-4 h-4 bg-[url('/images/arrow-down-black.svg')]"
+                aria-hidden="true"
+              ></span>
+            </button>
+          </div>
           <div class="macy">
             <a
               href="./images/photo-1.webp"
@@ -850,21 +865,6 @@
                 height="451"
                 class="w-full hover:scale-105 transition-[transform]"
             /></a>
-          </div>
-          <div
-            id="bricks-container-overlay"
-            class="absolute bottom-0 w-full h-[80%] flex flex-col items-center justify-end pb-22.5 bg-gradient-to-t from-beige transition-[opacity] duration-[2000ms] opacity-100"
-          >
-            <button
-              id="bricks-container-release"
-              class="flex flex-row items-center gap-2 bg-transparent border border-black text-black py-3 px-6 rounded-full motion-safe:transition-colors motion-safe:transition-all group hover:bg-white hover:text-black"
-            >
-              Rozwiń
-              <span
-                class="w-4 h-4 bg-[url('/images/arrow-down-black.svg')]"
-                aria-hidden="true"
-              ></span>
-            </button>
           </div>
         </div>
       </section>
