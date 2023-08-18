@@ -135,20 +135,17 @@
     <main id="tresc">
       <section
         class="bg-beige relative overflow-hidden"
+        aria-labelledby="slider-title"
         data-slider
-        aria-roledescription="karuzela"
-        aria-label="Banery"
       >
+        <h2 class="sr-only" id="slider-title">Karuzela - banery</h2>
         <ul
           data-slider-track
-          role="listbox"
           class="list-none overflow-hidden flex flex-row gap-4 motion-safe:scroll-smooth snap-x snap-mandatory"
         >
           <li
             class="min-w-[100%] snap-center"
             data-slide
-            role="group"
-            aria-roledescription="slide"
             aria-labelledby="carousel_item-1_heading"
           >
             <article
@@ -173,12 +170,11 @@
               <header
                 class="px-6 md:pr-16 py-8 md:py-16 lg:py-36.25 md:order-1 flex flex-col gap-4 lg:gap-11 mb-auto md:mt-auto"
               >
-                <h2
+                <h3
                   class="text-4xl lg:text-6xl/[1.16] font-medium font-headings text-black"
-                  id="carousel_item-1_heading"
                 >
                   Nowoczesna aranżacja Twojego ogrodu
-                </h2>
+                </h3>
                 <p class="text-base">
                   Marka GiardDesign to wieloletnie doświadczenie i wysoka
                   estetyka realizacji. Oferujemy kompleksowy zakres usługz
@@ -203,13 +199,7 @@
               </header>
             </article>
           </li>
-          <li
-            class="min-w-[100%] snap-center"
-            data-slide
-            role="group"
-            aria-roledescription="slide"
-            aria-labelledby="carousel_item-2_heading"
-          >
+          <li class="min-w-[100%] snap-center" data-slide>
             <article
               class="w-full max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-2 items-center h-full"
             >
@@ -231,12 +221,11 @@
               <header
                 class="px-6 md:pr-16 py-8 md:py-16 lg:py-36.25 md:order-1 flex flex-col gap-4 lg:gap-11 mb-auto md:mt-auto"
               >
-                <h2
+                <h3
                   class="text-4xl lg:text-6xl/[1.16] font-medium font-headings text-black"
-                  id="carousel_item-2_heading"
                 >
                   Lorem ipsum dolor sit
-                </h2>
+                </h3>
                 <p class="text-base">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
                   aperiam ullam alias ducimus quidem. Veniam laboriosam
@@ -253,13 +242,7 @@
               </header>
             </article>
           </li>
-          <li
-            class="min-w-[100%] snap-center"
-            data-slide
-            role="group"
-            aria-roledescription="slide"
-            aria-labelledby="carousel_item-3_heading"
-          >
+          <li class="min-w-[100%] snap-center" data-slide>
             <article
               class="max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-2 items-center h-full"
             >
@@ -281,12 +264,11 @@
               <header
                 class="px-6 md:pr-16 py-8 md:py-16 lg:py-36.25 md:order-1 flex flex-col gap-4 lg:gap-11 mb-auto md:mt-auto"
               >
-                <h2
+                <h3
                   class="text-4xl lg:text-6xl/[1.16] font-medium font-headings text-black"
-                  id="carousel_item-3_heading"
                 >
                   Beatae ipsam obcaecati
-                </h2>
+                </h3>
                 <p class="text-base">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
                   ut suscipit blanditiis consectetur eaque sunt, natus, ad
@@ -320,7 +302,6 @@
         <nav
           class="absolute md:bottom-0 max-md:top-[350px] max-md:-translate-y-full right-0 bg-white flex gap-8 px-8 py-6"
           data-slider-navigation
-          role="group"
           aria-label="sterowanie karuzelą"
         >
           <button class="w-12 h-12 group">
