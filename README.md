@@ -5,7 +5,7 @@
 1. Clone this repository:
 
 ```
-git clone https://github.com/grzegorzpokorski/adRespect-recruitment-task.git
+git clone https://github.com/grzegorzpokorski/adrespect-recruitment-task.git
 ```
 
 2. Install dependencies:
