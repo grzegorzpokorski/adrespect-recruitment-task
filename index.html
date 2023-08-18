@@ -33,7 +33,7 @@
           />
         </a>
         <button
-          id="navigationTrigger"
+          id="navigation-trigger"
           class="flex h-8 w-8 flex-col items-center justify-center gap-1.5 lg:hidden [&[aria-expanded=true]_div:nth-child(1)]:translate-y-2 [&[aria-expanded=true]_div:nth-child(3)]:-translate-y-2 [&[aria-expanded=true]_div:nth-child(1)]:rotate-45 [&[aria-expanded=true]_div:nth-child(3)]:-rotate-45 [&[aria-expanded=true]_div:nth-child(2)]:opacity-0"
           type="button"
           aria-label="Otwórz menu nawigacyjne"
@@ -96,31 +96,39 @@
               </li>
             </ul>
           </nav>
-          <form
-            action=""
-            class="flex flex-row items-center lg:justify-end gap-1 group/form order-1 lg:order-2"
-          >
-            <label for="search-input" class="sr-only">Szukaj</label>
-            <input
-              id="search-input"
-              type="text"
-              placeholder="Szukaj"
-              class="h-11 pr-24 w-full lg:w-0 rounded-md border border-green lg:border-0 bg-green/10 px-4 lg:px-0 py-2 lg:py-0 text-green placeholder:text-green/70 lg:group-hover/form:px-4 lg:focus:px-4 lg:group-hover/form:py-2 lg:focus:pxy-2 lg:group-hover/form:border lg:focus:border lg:group-hover/form:border-green lg:focus:border-green lg:group-hover/form:w-full lg:focus:w-full transition-all motion-reduce:transition-none duration-500"
-            />
-            <button
-              type="submit"
-              class="w-11 h-11 flex flex-col items-center justify-center bg-green/20 lg:bg-transparent border border-green lg:border-transparent lg:hover:bg-green/20 lg:hover:border-green rounded-md aspect-square transition-all motion-reduce:transition-none duration-500"
+          <div class="relative flex flex-row items-center gap-4 lg:order-2">
+            <form
+              action=""
+              class="flex flex-row items-center justify-between gap-1 h-11 lg:h-8 w-full lg:w-0 overflow-hidden motion-safe:transition-[width] motion-safe:duration-1000"
+              id="search-form"
             >
-              <span class="sr-only">szukaj</span>
-              <img
-                src="./images/search.svg"
-                alt="szukaj"
-                width="24"
-                height="24"
-                aria-hidden="true"
+              <label for="search-input" class="sr-only">Szukaj</label>
+              <input
+                type="text"
+                class="h-full w-full border border-black/80 focus:border-black px-4 rounded"
+                placeholder="Szukaj..."
+                id="search-input"
               />
+              <button
+                type="submit"
+                class="bg-black/80 hover:bg-black motion-safe:transition-colors text-white px-8 h-full rounded"
+              >
+                Szukaj
+              </button>
+            </form>
+            <button
+              id="search-toggler"
+              class="hidden lg:flex hover:opacity-80 group"
+              aria-controls="search-form"
+              aria-expanded="false"
+              aria-label="otworz formularz wyszukiwania"
+            >
+              <span
+                class="w-6 h-6 bg-[url('/images/search.svg')] group-[[data-isopen]]:bg-[url('/images/close.svg')] group-[[data-isopen]]:rotate-90 bg-cover motion-safe:transition-all"
+                aria-hidden="true"
+              ></span>
             </button>
-          </form>
+          </div>
         </div>
       </div>
     </header>

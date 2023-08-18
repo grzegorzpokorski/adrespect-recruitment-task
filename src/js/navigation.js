@@ -1,5 +1,7 @@
-const navigationTrigger = document.querySelector("#navigationTrigger");
+const navigationTrigger = document.querySelector("#navigation-trigger");
 const navigation = document.querySelector("#navigation");
+const searchToggler = document.querySelector("#search-toggler");
+const searchForm = document.querySelector("#search-form");
 
 const handlePressKey = (key, triggerKey, handler) => {
   if (key === triggerKey) {
@@ -40,5 +42,13 @@ export const initNavigation = () => {
       openMobileNavigation();
     }
   });
-  
+
+  searchToggler.addEventListener("click", () => {
+    searchForm.classList.toggle("lg:w-80");
+    searchForm.classList.toggle("lg:w-0");
+    searchToggler.getAttribute("aria-expanded") === "false"
+      ? searchToggler.setAttribute("aria-expanded", "true")
+      : searchToggler.setAttribute("aria-expanded", "false");
+    searchToggler.toggleAttribute("data-isopen");
+  });
 };
